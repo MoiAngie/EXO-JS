@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>EXO JS</title>
+
+    <!-- Custom styles for this template -->
+   <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="result">=</div>
+
+      <button type="button" name="five">5</button>
+
+      <button type="button" name="two">2</button>
+
+      <button type="button" name="eight">8</button>
+
+      <button type="button" name="plus" onclick="displayResult()">+</button>
+
+      </div>
+
+    <script type="text/javascript">
+      var a = 5;
+      var b = 2;
+      var x = a + b;
+      function displayResult() {
+        document.getElementById("result").innerHTML = x;
+      }
+
+    </script>
+  </body>
+  </html>

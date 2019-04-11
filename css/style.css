@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#container {
+  width: 1000px;
+  height: 600px;
+  margin: 10vh auto;
+  padding: 10vh;
+  border: 1px solid gray;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin: 5vh auto;
+  display: block;
+}
+
+#result {
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid green;
+  color: green;
+  padding: 20px;
+  font-weight: bold;
+  text-align: right;
+}
