@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Punition</title>
+
+    <!-- Custom styles for this template -->
+   <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- script  pour le javascript  -->
+    <script src="js/script.js" type="text/javascript"></script>
+  </head>
+
+  <body id="fond">
+
+          <center><button type="button" onclick="displayColor()" type="submit">CLIC</button></center>
+
+    <script>
+
+      function displayColor() {
+        var randomColor, uniqueColors = [ ],i = 0;
+           randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+        document.body.style.background = randomColor;
+      }
+
+
+
+
+    </script>
+
+    <!--version Jérèm:
+    function couleur() { var color = ["Red", "Firebrick", "Black", "White", "Orange", "Blue", "Brown"]; var rand = Math.floor(Math.random()*color.length); document.body.style.background = color[rand]; hors du <script> <button id="demo" onclick="couleur()" type="submit"> Change </button>
+-->
+
+  <!--  function displayColor() {
+          document.body.style.backgroundColor = "yellow";
+        }
+
+     var randomColor, uniqueColors = [ ],i = 0;
+        randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+        function displayColor() {
+          document.body.style.backgroundColor = randomColor;
+        }-->
+
+
+<!--  var indic=0;
+  monFond=document.getElementById('fond');
+  function change() {
+    if (indic==0)
+          {
+            fond.style.backgroundColor="yellow";
+            indic=2;
+          } else if  {
+            fond.style.backgroundColor="pink";
+          } else {
+            fond.style.backgroundColor="purple";
+          }
+  }-->
+
+
+<!-- var randomColor, uniqueColors = [ ],i = 0;
+  function changeBackground() {
+
+        randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+        if(uniqueColors.indexOf(randomColor)===-1){
+                document.body.style.background = randomColor;
+                document.body.style.WebkitTransition = "all 500ms linear";
+                uniqueColors.push(randomColor);
+                i++;
+                console.log(i);
+                if(i>=10){
+                        clearInterval(timer);
+                }
+        }
+        else changeBackground();
+  }
+
+  var timer = setInterval(function(){ changeBackground() }, 1000);*/-->
+
+  <!--/*var buton=document.getElementById("buton");
+  var allchar="0123456789ABCDEF";
+
+buton.addEventListener("click",myFun);
+
+function myFun(){
+var  randcol= "";
+for(var i=0; i<6; i++){
+ randcol += allchar[Math.floor(Math.random()*16)];
+}
+document.body.style.backgroundColor= "#"+randcol;
+}
+-->
+
+  </body>
+  </html>
